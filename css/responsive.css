@@ -1,0 +1,217 @@
+@media screen and (max-width:991px) {
+	.navbar {
+		position: relative
+	}
+	.header-icon {
+		position: fixed;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		top: 0
+	}
+	header .nav-menu {
+		background: #fff;
+		border-bottom: 1px solid #e2e2e2
+	}
+	a.navbar-brand {
+		color: #4c4c4c!important
+	}
+	.header-icon span i,
+	i.fas.fa-bars {
+		color: #00bcd4;
+		font-size: 154%
+	}
+	.header-icon span i:hover,
+	i.fas.fa-bars:hover {
+		color: #0496a9
+	}
+	div#nav {
+		text-align: center
+	}
+	header .navbar li a {
+		color: #4c4c4c;
+		display: block
+    }
+    .navbar-nav .nav-link{
+        margin-bottom: 10px;
+    }
+	section.jumbotron.hire-section {
+		padding: 35px 0
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.justify_start_center {
+		position: relative;
+		left: 50%;
+		text-align: left;
+		-webkit-transform: translateX(-15px);
+		transform: translateX(-15px)
+	}
+	.counter_up {
+		padding-right: 0;
+		padding-left: 0
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.section-padding {
+		padding: 18% 0
+	}
+	.buton button a,
+	.buton a {
+		font-size: 15px;
+		height: 35px;
+		line-height: 35px;
+		width: 120px;
+		font-weight: 500
+	}
+	.header-content h2 {
+		font-size: 300%
+	}
+	.header-content h3 {
+		font-size: 175%;
+		margin-bottom: 3%
+	}
+	.header-content .short-into {
+		padding: 5px 20px
+	}
+	.header-content .feeling p {
+		font-size: 100%;
+		margin-top: 8%
+	}
+	.header-content a.custom-btn .btn {
+		font-size: 100%;
+		padding: 8px 14px
+	}
+	.resume .title {
+		margin-bottom: 4%
+	}
+	.resume .item li {
+		margin-bottom: 0
+	}
+	section.counter-section .col-md-3.col-sm-6 {
+		width: 48%;
+		margin: auto;
+		margin-bottom: 4%;
+		padding-right: 5px;
+		padding-left: 5px
+	}
+	.justify_start_center {
+		left: 0;
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	.sm-justify-center {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+	.portfolio-items .container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 568px
+	}
+	section.jumbotron.hire-section .justify_start_center,
+	.justify_start_center .section-head h2 {
+		text-align: center
+	}
+	section.jumbotron.hire-section .justify_start_center h2 {
+		font-size: 200%
+	}
+	section#contact .btn-one {
+		min-width: 50%
+	}
+	.justify_start_center a {
+		width: 50%;
+		margin: auto
+	}
+	section#contact .btn-one {
+		min-width: 100%
+	}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+	.header-content h2 {
+		font-size: 320%
+	}
+	.header-content h3 {
+		font-size: 195%
+	}
+	.header-content .short-into {
+		padding: 6px 20px;
+		text-align: center
+	}
+	.header-content .feeling p {
+		font-size: 110%;
+		margin-top: 6%
+	}
+	.header-content a.custom-btn .btn {
+		font-size: 100%;
+		padding: 8px 14px
+	}
+}
+
+@media only screen and (max-width:359px) {
+	.header-content h2 {
+		font-size: 200%
+	}
+	.header-content h3 {
+		font-size: 150%
+	}
+	.header-content .short-into {
+		padding: 4px 0;
+		max-width: 245px;
+		letter-spacing: 1px;
+		text-align: center
+	}
+	.short-into span {
+		font-size: 90%
+	}
+	.header-content .feeling p {
+		margin-top: 12%
+	}
+	section.counter-section .col-md-3.col-sm-6 {
+		width: 80%
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	.header-content .short-into {
+		padding: 5px 14px
+	}
+	.header-content .feeling p {
+		font-size: 100%;
+		margin-top: 8%
+	}
+	.header-content a.custom-btn .btn {
+		font-size: 100%;
+		padding: 8px 14px
+	}
+	section.counter-section .col-md-3.col-sm-6 {
+		margin: auto;
+		margin-bottom: 4%;
+		padding-right: 5px;
+		padding-left: 5px
+	}
+	.justify_start_center {
+		left: 0;
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	.sm-justify-center {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+}
