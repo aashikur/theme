@@ -131,3 +131,7 @@ $(document).ready(function () {
 	})
 	wow.init();
 });
+
+$(document).ready(function () {
+	$(".lazy").unveil();
+});
