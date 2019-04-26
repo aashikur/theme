@@ -1,6 +1,3 @@
-// Load background Image
-$('.header-image').css('background-image', 'linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/header-img.jpg)');
-
 // Loader strt
 $(window).on('load', function () {
 	$('.loder').fadeOut(); // stop as soon as document loaded
