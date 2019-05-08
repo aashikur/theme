@@ -1,25 +1,42 @@
-// Loader strt
-$(window).on('load', function () {
-	$('.loder').fadeOut(); // stop as soon as document loaded
+/********************************************
+* Preloder Start
+********************************************/
 
-});
 setTimeout( function(){ 
 	$(".loder").fadeOut(); // stop after 5s anyway
   }  , 5000 );
-// Loader End
+
+$(window).on('load', function () {
+	$('.loder').fadeOut(); // stop as soon as document loaded
+
+}); // Preloader End
 
 $(document).ready(function () {
+/********************************************
+* Menu - Class active change
+********************************************/
 	$("section#portfolio .nav-item a").click(function () {
 		$("section#portfolio .nav-item").removeClass("active");
-		$(this).parent().addClass("active")
-	})
-});
-$(document).ready(function () {
+		$(this).parent().addClass("active") ;
+	});
+/********************************************
+* Small Device Expand Hide/Show Method
+********************************************/
 	$(".navbar-collapse > ul > li  a").click(function () {
 		$(".navbar-collapse").removeClass("show")
-	})
+	});
+
+
 });
+
+
+
+
 $(window).scroll(function () {
+	
+/********************************************
+* Snike navbar - Color change - To Top
+********************************************/
 	var a = $(window).scrollTop();
 	if (a >= 100) {
 		$("header .nav-menu").addClass("scroll-change");
@@ -28,18 +45,26 @@ $(window).scroll(function () {
 		$("header .nav-menu").removeClass("scroll-change");
 		$("#nav").removeClass("s-color")
 	}
+	
 	if (a >= 800) {
 		$("#to_top").fadeIn()
 	} else {
 		$("#to_top").hide(10)
 	}
 });
+
 $(document).ready(function () {
+
+/********************************************
+* Snake Gallery Direction Plugin 
+********************************************/
 	$(".snake").snakeify({
 		speed: 400
 	})
-});
-$(document).ready(function () {
+
+/********************************************
+* Isotop Filter Plugin
+********************************************/
 	var a = $(".portfolio-gallery-wrapper").isotope({
 		itemSelector: ".portfolio-gallery",
 		layoutMode: "fitRows"
@@ -50,9 +75,11 @@ $(document).ready(function () {
 			filter: b
 		})
 	})
-});
-$(document).ready(function () {
-	$(document).ready(function () {
+
+
+/********************************************
+* Slick Slider
+********************************************/
 		$(".ourclints-wrapper").slick({
 			slidesToShow: 5,
 			slidesToScroll: 1,
@@ -81,15 +108,18 @@ $(document).ready(function () {
 				}
 			}]
 		})
-	})
-});
-$(document).ready(function () {
+
+/********************************************
+* Counter Up 
+********************************************/
 	$(".counter_up h5").counterUp({
 		delay: 10,
 		time: 1000
 	})
-});
-$(function () {
+
+/********************************************
+* Scroll To Plugin
+********************************************/
 	$.scrollIt({
 		topOffset: -63
 	})
@@ -97,6 +127,10 @@ $(function () {
 
 
 $(window).scroll(function(){
+	
+/********************************************
+* Progress Bar - Custom
+********************************************/
 	$(".progress-bar").each(function(){
 
 		// take value from bottom screen of windows // take Value of Bottom of Windows // take Indivisual value of Progress Bar
@@ -111,8 +145,10 @@ $(window).scroll(function(){
 	});
 });
 
-
-
+$(document).ready(function () {
+/********************************************
+*  Magnific Pupup
+********************************************/
 $('.snake').magnificPopup({
 	type: 'image',
 	closeOnContentClick: true,
@@ -121,14 +157,23 @@ $('.snake').magnificPopup({
 	}
 });
 
-
-$(document).ready(function () {
+/********************************************
+* WOW.js Plugin
+********************************************/
 	wow = new WOW({
 		mobile: false
 	})
 	wow.init();
-});
 
-$(document).ready(function () {
+/********************************************
+* Lazy Image Load
+********************************************/
 	$(".lazy").unveil();
-});
+
+
+/********************************************
+* Validate Jquery 
+********************************************/
+$("form").validate();
+$("#commentForm").validate();
+ });
