@@ -34,7 +34,12 @@
 	header .navbar li a {
 		color: #4c4c4c;
 		display: block
-    }
+	}
+
+	#about, .resume {
+		text-align: center;
+	}
+
     .navbar-nav .nav-link{
         margin-bottom: 10px;
     }
@@ -50,6 +55,9 @@
 		text-align: left;
 		-webkit-transform: translateX(-15px);
 		transform: translateX(-15px)
+	}
+	.single-project img {
+		height: 280px;
 	}
 	.counter_up {
 		padding-right: 0;
@@ -116,7 +124,7 @@
 	.portfolio-items .container-fluid {
 		padding-right: 15px;
 		padding-left: 15px;
-		max-width: 568px
+		max-width: 568px;
 	}
 	section.jumbotron.hire-section .justify_start_center,
 	.justify_start_center .section-head h2 {
@@ -157,7 +165,10 @@
 		padding: 8px 14px
 	}
 }
-
+@media only screen and (max-width:576px) {
+.single-project img {
+ height: 280px;
+}}
 @media only screen and (max-width:359px) {
 	.header-content h2 {
 		font-size: 200%

@@ -55,27 +55,6 @@ $(window).scroll(function () {
 
 $(document).ready(function () {
 
-/********************************************
-* Snake Gallery Direction Plugin 
-********************************************/
-	$(".snake").snakeify({
-		speed: 400
-	})
-
-/********************************************
-* Isotop Filter Plugin
-********************************************/
-	var a = $(".portfolio-gallery-wrapper").isotope({
-		itemSelector: ".portfolio-gallery",
-		layoutMode: "fitRows"
-	});
-	$("#portfolio .filter-nav li").click(function () {
-		var b = $(this).attr("date-name");
-		a.isotope({
-			filter: b
-		})
-	})
-
 
 /********************************************
 * Slick Slider
@@ -149,13 +128,21 @@ $(document).ready(function () {
 /********************************************
 *  Magnific Pupup
 ********************************************/
-$('.snake').magnificPopup({
-	type: 'image',
-	closeOnContentClick: true,
-	image: {
-		verticalFit: false
-	}
+$('.filter-portfolio').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
 });
+
+
+
+
+$('.filter-portfolio').filterizr();
+
 
 /********************************************
 * WOW.js Plugin

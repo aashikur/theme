@@ -1,3 +1,6 @@
+/******************************************************************************************
+ * Google Font
+******************************************************************************************/
 @import url('https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:300,400,600,700|Muli:200,200i,300,300i,400,400i,600,700,800,900|Open+Sans:300,400,600,600i,700,800|Raleway:100,200,300,400,500,600,700,800,900');
 
 * {
@@ -151,7 +154,7 @@ a:hover {
 }
 
 /******************************************************************************************
- * 
+ * Button Style
 ******************************************************************************************/
 
 .buton {
@@ -296,7 +299,7 @@ button:focus {
 }
 
 /******************************************************************************************
- * 
+ * Preloading Style 
 ******************************************************************************************/
 
 
@@ -526,7 +529,7 @@ button:focus {
 
 
 /******************************************************************************************
- * 
+ * Header Main Menu
 ******************************************************************************************/
 
 header .nav-menu {
@@ -567,6 +570,11 @@ nav a.navbar-brand {
 	font-family: 'Acme', sans-serif;
 	font-size: 214%;
 	color: white
+}
+
+.navbar-brand img {
+    max-width: 145px;
+    max-height: 85px;
 }
 
 nav span.text-info {
@@ -623,7 +631,7 @@ nav.navbar.scroll-change .header-icon span i {
 }
 
 /******************************************************************************************
- * 
+ * Header Image
 ******************************************************************************************/
 
 .header-image {
@@ -711,7 +719,7 @@ section.jumbotron.hire-section .buton a:before,
 }
 
 /******************************************************************************************
- * 
+ * About ME - Hero Image
 ******************************************************************************************/
 
 .hero .hero-img {
@@ -782,7 +790,7 @@ section.jumbotron.hire-section .buton a:before,
 
 
 /******************************************************************************************
- * 
+ * About Me - Progress Bar
 ******************************************************************************************/
 
 
@@ -941,7 +949,7 @@ span.progress-tooltip {
 
 
 /******************************************************************************************
- * 
+ * Protfolio - Nav
 ******************************************************************************************/
 
 ul.filter-nav li a {
@@ -969,169 +977,61 @@ ul.filter-nav li.active a {
 	padding-left: 0
 }
 
-.portfolio-gallery {
-	display: inline-block;
-	padding: 0;
+.filter-portfolio [class*="col-"] {
+    padding: 0;
+}
+.single-project {
+	width:100%;
 	position: relative;
-	overflow: hidden;
-	cursor: pointer
 }
-
-.portfolio-gallery img {
-	width: 100%;
-	/* height: 100%; */
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease;
-	-webkit-transition-delay: .3s;
-	        transition-delay: .3s
+.single-project:before {
+    content: "";
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background: #222222;
+    position: absolute;
+    transition: all .4s;
+    opacity: 0;
 }
-
-
-.portfolio-gallery:hover img {
-	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="5" /></filter></svg>#filter');
-	-webkit-filter: blur(5px);
-	        filter: blur(5px)
-}
-
-.portfolio-gallery .overlay {
-	position: absolute;
-	z-index: 2
-}
-
-.portfolio-gallery .overlay .overlay-content {
-	position: absolute;
-	background: #fdfdfd00;
+.overly {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-50%);
+	transition: all .4s;
 	opacity: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	top: 5%;
-	bottom: 5%;
-	left: 5%;
-	right: 5%;
-	color: white;
-	text-align: center;
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease
+}
+.single-project i {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    font-size: 22px;
+    color: #22d5ec;
+    transition: all .4s;
+    opacity: 0;
+}
+.single-project:hover::before {opacity: .8;}
+
+.single-project:hover .overly,.single-project:hover i {
+    opacity: 1;
+}
+.overly h1 {
+    color: #eaeaea;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-.portfolio-gallery:hover .overlay-content {
-	background: #eaeaea;
-	/* background: #ffffffaf; */
-	opacity: 0.9;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+.overly p {
+    color: #f4f4f4;
 }
-
-.overlay-content .title {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%)
-}
-
-.overlay-content i {
-	position: absolute;
-	top: 7%;
-	right: 7%;
-	font-size: 150%;
-	color: #00bcd4;
-	padding: 10px
-}
-
-.overlay-content .title h3 {
-	color: #4c4c4c;
-	font-size: 180%;
-	font-weight: bold
-}
-
-.overlay-content .title p {
-	font-size: 100%;
-	color: #000
-}
-
-
-/*-----------------------------------------------------------------------------------------
- * 
--------------------------------------------------------------------------------------------*/
-
-.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-    color: #000 !important;
-
-}
-
-.mfp-bg.mfp-ready {
-	background: #f3f3f3d4;
-	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
-}
-
-.modal_body {
-	position: relative
-}
-
-.modalbox {
-	max-width: 800px;
-	margin: auto
-}
-
-.modal_header {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: auto auto auto;
-	    grid-template-columns: auto auto auto;
-	background: #f0f0f0;
-	width: 100%
-}
-
-.modal_header p,
-.modal_header a,
-.modal_header button {
-	color: #3a3b3b;
-	padding: 0;
-	height: auto;
-	width: auto;
-	line-height: initial
-}
-
-.modal_header p {
-	padding-top: 5px;
-	padding-left: 5px;
-	font-size: 13px
-}
-
-.close {
-	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
-}
-
-.modal_header a {
-	width: 100px;
-	text-align: center;
-	padding: 8px 0;
-	font-size: 19px;
-	margin: 5px 0;
-	text-decoration: underline;
-	font-weight: 500;
-	color: #00bcd4
-}
-
-.modal_header a:hover {
-	opacity: .75;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"
-}
-
-.modalbox button.mfp-close {
-	position: relative;
-	float: right;
-	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	margin: 0;
-	background: #ff000000;
-	color: #1e2223;
-	width: 33px;
-	height: 33px
-}
-
-.image-source-link {
-	color: #98c3d1
+.single-project img {
+    height: 222px;
 }
 
 /******************************************************************************************
@@ -1253,7 +1153,7 @@ section.jumbotron.hire-section {
 }
 
 /******************************************************************************************
- * 
+ * Testimonial 
 ******************************************************************************************/
 
 #testimonial .section-head {
@@ -1493,7 +1393,6 @@ section.ourclients-section {
 
 .ourclints img {
 	display: block;
-	vertical-align: middle;
 	opacity: .6;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	-webkit-transition: all .2s ease-in;

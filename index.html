@@ -20,8 +20,10 @@
       <title>Aashikur | Build your Amizing Website With Ashik</title>
    </head>
    <body>
-<!-- preloader -->
-         <div class="loder">
+<!--===========================================================================================
+   Preloader - Website
+=============================================================================================--> 
+        <div class="loder">
                <div class="cube-wrap">
                   <div class="cube-folding">
                      <span class="leaf1"></span>
@@ -35,11 +37,18 @@
             
             
 
-
+<!--===========================================================================================
+   Nav-Menu
+=============================================================================================-->
       <header>
          <nav class="navbar navbar-expand-lg nav-menu">
             <div class="container pr-0">
-               <a data-scroll-goto="1" href="#" class="navbar-brand">Ash<span class='text-info'>ik</span></a> <button class="navbar-toggler px-md-4" data-target='#nav' data-toggle='collapse'> <span><i class="fas fa-bars"></i></span> </button> 
+               <a data-scroll-goto="1" href="#" class="navbar-brand">
+                  Ash<span class='text-info'>ik</span>
+                  <!--If No Name =>  Image of The Logo 
+                  <img src="img/logo.png" alt="Brand Logo" /> -->
+               </a> 
+               <button class="navbar-toggler px-md-4" data-target='#nav' data-toggle='collapse'> <span><i class="fas fa-bars"></i></span> </button> 
                <div class="collapse navbar-collapse"></div>
                <div id='nav' class='collapse navbar-collapse'>
                   <ul class="nav navbar-nav mr-auto ">
@@ -62,7 +71,9 @@
    
 
 
-
+<!--===========================================================================================
+  HOme
+=============================================================================================-->
       <section data-scroll-index="1" id='home' class="full-width header-image ">
          <div class="container o-hidden">
             <div class="header-content ">
@@ -80,7 +91,9 @@
       </section>
 
 
-
+<!--===========================================================================================
+   Hero
+=============================================================================================-->
       <section data-scroll-index="2" id="about" class="section-padding hero ">
          <div class="section-head wow fadeInUp">
             <h4>What about you?</h4>
@@ -103,7 +116,7 @@
             </div>
          </div>
       </section>
-      <section class="resume bg-img bg_color" data-overlay-dark="8">
+      <section class="resume bg-img bg_color">
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-sm-6">
@@ -178,7 +191,11 @@
             </div>
          </div>
       </section>
-      <section data-scroll-index="3" id='portfolio' class=" portfolio section-padding ">
+
+<!--===========================================================================================
+   Portfolio 
+=============================================================================================-->
+     <section data-scroll-index="3" id='portfolio' class=" portfolio section-padding ">
          <div class="container">
             <div class="d-flex flex-column">
                <div class="section-head wow fadeInUp">
@@ -186,205 +203,110 @@
                   <h2><span class='border-bottom'>Port</span><span>folio</span></h2>
                </div>
                <ul class="nav justify-content-center filter-nav mb-5">
-                  <li date-name='*' class="nav-item active"> <a class="nav-link " href="#0">All </a></li>
-                  <li date-name='.default' class="nav-item"> <a class="nav-link" href="#0">Bootstrap</a></li>
-                  <li date-name='.parallex' class="nav-item"> <a class="nav-link" href="#0">WordPress</a></li>
-                  <li date-name='.bootstrap' class="nav-item"> <a class="nav-link " href="#0">Parallax</a></li>
+                  <li  data-filter="all" class="nav-item active"> <a class="nav-link " href="#0">All </a></li>
+                  <li  data-filter="1" class="nav-item"> <a class="nav-link" href="#0">Bootstrap</a></li>
+                  <li  data-filter="2" class="nav-item"> <a class="nav-link" href="#0">WordPress</a></li>
+                  <li  data-filter="3" class="nav-item"> <a class="nav-link " href="#0">Parallax</a></li>
                </ul>
             </div>
          </div>
+         <div class="filter-portfolio">
+            <div class="row" style="padding:0 15px;">
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="1" data-sort="value">
+                  <a href="img/project/01.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/01.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
 
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="2" data-sort="value">
+                  <a href="img/project/02.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/02.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
 
-         <!-- djfldjddljdljdskjdslfjj -->
-         <div class="portfolio portfolio-items full-width">
-            <div class="container-fluid">
-               <div class="portfolio-gallery-wrapper">
-                
-                <div href='img/project/01.jpg' class="col-md-6 col-xl-3 portfolio-gallery snake wow fadeInUp delay-250ms">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                               <a href="#0"><i class="far fa-eye"></i></a> 
-                               <div class="title">
-                                  <h3>Project #1</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                               </div>
-                            </div>
-                         </div>
-                         <img class="lazy"  src="img/load.gif"  data-src="img/project/01.jpg"/>
-                  </div>
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="3" data-sort="value">
+                  <a href="img/project/03.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/03.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
 
-                  <div href='img/project/02.jpg' class="col-md-6 col-xl-3 portfolio-gallery parallex bootstrap snake wow fadeInUp delay-300ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #2</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="1" data-sort="value">
+                  <a href="img/project/04.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/04.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/02.jpg"/>
-                  </div>
-                  <div href='img/project/03.jpg' class="col-md-6 col-xl-3 portfolio-gallery default bootstrap snake wow fadeInUp delay-350ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #3</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/03.jpg"/>
-                  </div>
-                  <div href='img/project/04.jpg' class="col-md-6 col-xl-3 portfolio-gallery default parallex snake wow fadeInUp delay-400ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #4</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/04.jpg"/>
-                  </div>
-                  <div href='img/project/05.jpg' class="col-md-6 col-xl-3 portfolio-gallery default bootstrap snake wow fadeInUp delay-450ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #5</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/05.jpg"/>
-                  </div>
-                  <div href='img/project/06.jpg' class="col-md-6 col-xl-3 portfolio-gallery default parallex snake wow fadeInUp delay-500ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #6</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/06.jpg"/>
-                  </div>
-                  <div href='img/project/07.jpg' class="col-md-6 col-xl-3 portfolio-gallery default parallex snake wow fadeInUp delay-550ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #7</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/07.jpg"/>
-                  </div>
-                  <div href='img/project/08.jpg' class="col-md-6 col-xl-3 portfolio-gallery default parallex snake wow fadeInUp delay-600ms">
-                     <div class="overlay">
-                        <div class="overlay-content">
-                           <a href="#0"><i class="far fa-eye"></i></a> 
-                           <div class="title">
-                              <h3>Project #8</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus bibendum mollis.</p>
-                           </div>
-                        </div>
-                     </div>
-                     <img class="lazy"  src="img/load.gif" data-src="img/project/08.jpg"/>
-                  </div>
+                        <i class="far fa-eye"></i>
+                  </a>
                </div>
-            </div>
-         </div>
-         <span class="buton ml-2 buton-bord text-center view-all-project d-none"> <a data-scroll-goto="3" href="#0" front="View All Project" back="View All Project"></a> </span> 
-         <div class="clearfix"></div>
-      </section>
 
-         <div id="porject01" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="2" data-sort="value">
+                  <a href="img/project/05.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/05.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
                </div>
-               <img src="img/load.gif" data-src="img/project/modal/01.jpg" class='img-fluid lazy'>
+
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="3" data-sort="value">
+                  <a href="img/project/06.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/06.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
+
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="1" data-sort="value">
+                  <a href="img/project/07.jpg" class="single-project">
+                     <img  class="lazy" src="img/load.gif" data-src="img/project/07.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
+
+               <div  class="col-sm-6 col-lg-3 filtr-item" data-category="2" data-sort="value">
+                  <a href="img/project/08.jpg" class="single-project">
+                     <img class="lazy" src="img/load.gif" data-src="img/project/08.jpg" alt="Portfolio image">
+                     <div class="overly">
+                           <h1>#Preject 01</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="far fa-eye"></i>
+                  </a>
+               </div>
+
             </div>
          </div>
-         <div id="porject02" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/02.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject03" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/03.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject04" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/04.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject05" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/05.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject06" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/06.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject07" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/07.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-         <div id="porject08" class="mfp-hide modalbox">
-            <div class="modal_body">
-               <div class="modal_header">
-                  <p>&copy; Ashikur Rahaman</p>
-                  <a href="#0" class="bttn">View Live</a> 
-                  <div class="close"> <button title="Close (Esc)" type="button" class="mfp-close">×</button> </div>
-               </div>
-               <img src="img/load.gif" data-src="img/project/modal/08.jpg" class='img-fluid lazy'>
-            </div>
-         </div>
-      </div>
+      </section> 
+
+<!--===========================================================================================
+   Action Secton - Click Now
+=============================================================================================-->
       <section class="jumbotron hire-section section-padding mb-0">
          <div class="container-fluid position-relative sm-justify-center">
             <div class="d-flex justify_start_center wow fadeInRight delay-400ms">
@@ -398,6 +320,10 @@
             </div>
          </div>
       </section>
+
+<!--===========================================================================================
+   Services
+=============================================================================================-->
       <section data-scroll-index="4" id='service' class="section-padding bg_color ">
          <div class="container">
             <div class="section-head wow fadeInUp">
@@ -453,6 +379,10 @@
             </div>
          </div>
       </section>
+
+<!--===========================================================================================
+   Testimonial
+=============================================================================================-->
       <section data-scroll-index="5" id='testimonial' class="testimonials section-padding ">
          <div class="section-head wow fadeInUp">
             <h4>What's people say about me!</h4>
@@ -497,6 +427,9 @@
             </div>
          </div>
       </section>
+<!--===========================================================================================
+   Activities
+=============================================================================================-->
       <section class="section-padding counter-section jumbotron mb-0">
          <div class="container">
             <div class="section-head wow fadeInUp delay-150ms">
@@ -534,6 +467,9 @@
             </div>
          </div>
       </section>
+<!--===========================================================================================
+   Blog
+=============================================================================================--> 
       <section data-scroll-index="6" id='blog' class="section-padding ">
          <div class="container">
             <div class="section-head wow fadeInUp delay-150ms">
@@ -583,6 +519,10 @@
             </div>
          </div>
       </section>
+
+<!--===========================================================================================
+   Our Clients
+=============================================================================================-->
       <section class="jumbotron ourclients-section">
          <div class="container">
             <div class="ourclints-wrapper">
@@ -595,6 +535,9 @@
             </div>
          </div>
       </section>
+<!--===========================================================================================
+   Contact
+=============================================================================================-->
       <section data-scroll-index="7" id="contact" class="bg_color contact section-padding ">
          <div class="container">
             <div class="section-head wow fadeInUp delay-150ms col-12">
@@ -625,8 +568,13 @@
                </div>
          </div>
       </section>
-
+<!--===========================================================================================
+   To Top
+=============================================================================================-->
       <div id="to_top" data-scroll-goto="1" class='animated'> <i class="fa fa-angle-up "></i></div>
+<!--===========================================================================================
+   Footer
+=============================================================================================-->
       <footer>
          <div class="container text-center">
             <div class="footer-social"> <a href="#0"><i class="m-1 fab fa-facebook-f"></i></a> <a target="_blank" href="#0"><i class="far fa-envelope"></i></a> <a href="#0"><i class="fab fa-skype"></i></a> <a href="#0"><i class="fab fa-linkedin-in"></i></a> <a target="_blank" href="https://github.com/aashikur"><i class="fab fa-github"></i></a></div>
@@ -636,7 +584,6 @@
             <script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script> 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-            <script src="js/gallery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> 
             <script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
@@ -644,6 +591,7 @@
              <script src="js/scrollIt.min.js"></script> 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+            <script src="js/jquery.filterizr-with-jquery.min.js"></script>
             <script src="js/animated-headline.js"></script>
             <script src="js/unveil.lazy.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
