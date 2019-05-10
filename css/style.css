@@ -1,11 +1,12 @@
 /******************************************************************************************
  * Google Font
 ******************************************************************************************/
-@import url('https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:300,400,600,700|Muli:200,200i,300,300i,400,400i,600,700,800,900|Open+Sans:300,400,600,600i,700,800|Raleway:100,200,300,400,500,600,700,800,900');
 
+@import url('https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:300,400,600,700|Muli:200,200i,300,300i,400,400i,600,700,800,900|Open+Sans:300,400,600,600i,700,800|Raleway:100,200,300,400,500,600,700,800,900');
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: 0;
 	list-style: none;
@@ -56,7 +57,6 @@ img {
 	height: auto
 }
 
-
 span,
 a,
 a:hover {
@@ -90,68 +90,74 @@ a:hover {
 
 .delay-150ms {
 	-webkit-animation-delay: 150ms;
-	        animation-delay: 150ms
+	animation-delay: 150ms
 }
 
 .delay-200ms {
 	-webkit-animation-delay: 200ms;
-	        animation-delay: 200ms
+	animation-delay: 200ms
 }
 
 .delay-250ms {
 	-webkit-animation-delay: 250ms;
-	        animation-delay: 250ms
+	animation-delay: 250ms
 }
 
 .delay-300ms {
 	-webkit-animation-delay: 300ms;
-	        animation-delay: 300ms
+	animation-delay: 300ms
 }
 
 .delay-350ms {
 	-webkit-animation-delay: 350ms;
-	        animation-delay: 350ms
+	animation-delay: 350ms
 }
 
 .delay-400ms {
 	-webkit-animation-delay: 400ms;
-	        animation-delay: 400ms
+	animation-delay: 400ms
 }
 
 .delay-450ms {
 	-webkit-animation-delay: 450ms;
-	        animation-delay: 450ms
+	animation-delay: 450ms
 }
 
 .delay-500ms {
 	-webkit-animation-delay: 500ms;
-	        animation-delay: 500ms
+	animation-delay: 500ms
 }
 
 .delay-550ms {
 	-webkit-animation-delay: 550ms;
-	        animation-delay: 550ms
+	animation-delay: 550ms
 }
 
 .delay-600ms {
 	-webkit-animation-delay: 600ms;
-	        animation-delay: 600ms
+	animation-delay: 600ms
 }
 
 .delay-650ms {
 	-webkit-animation-delay: 650ms;
-	        animation-delay: 650ms
+	animation-delay: 650ms
 }
 
 .delay-700ms {
 	-webkit-animation-delay: 700ms;
-	        animation-delay: 700ms
+	animation-delay: 700ms
+}
+
+.delay-750ms {
+	-webkit-animation-delay: 750ms;
+	animation-delay: 750ms
 }
 
 .delay-800ms {
 	-webkit-animation-delay: 800ms;
-	        animation-delay: 800ms
+	animation-delay: 800ms
 }
+
 
 /******************************************************************************************
  * Button Style
@@ -174,7 +180,9 @@ a:hover {
 	transform-style: preserve-3d;
 	position: relative;
 	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	cursor: pointer
 }
@@ -194,8 +202,10 @@ a:hover {
 	border: 1px solid #17a2b8;
 	line-height: 38px;
 	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	-webkit-transform-origin: bottom;
+	-ms-transform-origin: bottom;
 	transform-origin: bottom;
 	-webkit-transform: translateY(-100%) rotateX(90deg);
 	transform: translateY(-100%) rotateX(90deg)
@@ -212,8 +222,10 @@ a:hover {
 	background: #17a2b8;
 	color: #fff;
 	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	-webkit-transform-origin: top;
+	-ms-transform-origin: top;
 	transform-origin: top;
 	-webkit-transform: translateY(0) rotateX(0deg);
 	transform: translateY(0) rotateX(0deg)
@@ -261,7 +273,6 @@ a:hover {
 	background: #222
 }
 
-
 button:focus {
 	text-decoration: none;
 	outline: 0;
@@ -272,6 +283,7 @@ button:focus {
 	background: #49dbf3;
 	border: 2px solid #49dbf3;
 	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 	display: inline-block;
 	color: #fff;
@@ -289,6 +301,7 @@ button:focus {
 	letter-spacing: 1px;
 	margin-right: 15px;
 	border-radius: 2px;
+	-webkit-box-shadow: 0 9px 15px #d1f5fb;
 	box-shadow: 0 9px 15px #d1f5fb;
 }
 
@@ -298,10 +311,10 @@ button:focus {
 	color: white
 }
 
+
 /******************************************************************************************
  * Preloading Style 
 ******************************************************************************************/
-
 
 .cube-folding {
 	width: 50px;
@@ -495,7 +508,6 @@ button:focus {
 	z-index: 99999;
 }
 
-
 .made-with-love {
 	position: fixed;
 	left: 0;
@@ -526,8 +538,6 @@ button:focus {
 }
 
 
-
-
 /******************************************************************************************
  * Header Main Menu
 ******************************************************************************************/
@@ -546,8 +556,10 @@ nav.navbar.scroll-change {
 	position: fixed;
 	top: -80px;
 	-webkit-transform: translateY(80px);
-	        transform: translateY(80px);
+	-ms-transform: translateY(80px);
+	transform: translateY(80px);
 	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	padding: 6.4px 16px;
 	padding: 6.4px 16px;
@@ -563,6 +575,7 @@ header .nav-menu:after {
 	background: #ffffff0a;
 	bottom: 0;
 	-webkit-transform: scaleX(.85);
+	-ms-transform: scaleX(.85);
 	transform: scaleX(.85);
 }
 
@@ -573,8 +586,8 @@ nav a.navbar-brand {
 }
 
 .navbar-brand img {
-    max-width: 145px;
-    max-height: 85px;
+	max-width: 145px;
+	max-height: 85px;
 }
 
 nav span.text-info {
@@ -584,6 +597,7 @@ nav span.text-info {
 .header-icon span i {
 	color: white;
 	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in;
 	font-size: 115%;
 	padding: 2px
@@ -614,8 +628,10 @@ header .navbar li a.active:after {
 	right: 0;
 	bottom: 2px;
 	-webkit-transform: scaleX(0.4);
-	        transform: scaleX(0.4);
+	-ms-transform: scaleX(0.4);
+	transform: scaleX(0.4);
 	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out
 }
 
@@ -630,12 +646,15 @@ nav.navbar.scroll-change .header-icon span i {
 	color: #4c4c4c
 }
 
+
 /******************************************************************************************
  * Header Image
 ******************************************************************************************/
 
 .header-image {
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/header-img.jpg);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .75)), to(rgba(0, 0, 0, .75))), url(../img/header-img.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/header-img.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/header-img.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -643,16 +662,17 @@ nav.navbar.scroll-change .header-icon span i {
 	min-height: 99%;
 	height: 99vh;
 	position: relative;
-	padding:10px 0;
+	padding: 10px 0;
 }
 
 .header-content {
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 	margin-left: 2%;
-	padding:25px 0;
+	padding: 25px 0;
 }
 
 .header-content h2 {
@@ -718,6 +738,7 @@ section.jumbotron.hire-section .buton a:before,
 	font-family: 'Open Sans', sans-serif
 }
 
+
 /******************************************************************************************
  * About ME - Hero Image
 ******************************************************************************************/
@@ -726,6 +747,7 @@ section.jumbotron.hire-section .buton a:before,
 	padding: 0 20px 0 0;
 	position: relative;
 	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 	max-width: 410px;
 	margin: auto
@@ -753,6 +775,7 @@ section.jumbotron.hire-section .buton a:before,
 	bottom: -15px;
 	z-index: -1;
 	-webkit-transition: all .5s;
+	-o-transition: all .5s;
 	transition: all .5s
 }
 
@@ -775,6 +798,7 @@ section.jumbotron.hire-section .buton a:before,
 	margin: 15px 5px 15px 0;
 	cursor: pointer;
 	-webkit-transition: all .5s;
+	-o-transition: all .5s;
 	transition: all .5s
 }
 
@@ -792,7 +816,6 @@ section.jumbotron.hire-section .buton a:before,
 /******************************************************************************************
  * About Me - Progress Bar
 ******************************************************************************************/
-
 
 .progress-skill {
 	margin-top: 3%
@@ -823,6 +846,7 @@ section.jumbotron.hire-section .buton a:before,
 .progress {
 	height: 5px;
 	overflow: visible;
+	-webkit-box-shadow: inset 0 0 7px #c1bbbb;
 	box-shadow: inset 0 0 7px #c1bbbb;
 	position: relative
 }
@@ -832,13 +856,13 @@ section.jumbotron.hire-section .buton a:before,
 	position: relative;
 	border-radius: 30px;
 	background: #17a2b8;
-	-webkit-animation: slideInLeft;
-	        animation: slideInLeft;
-	-webkit-animation-name: slideInLeft;
-	-o-animation-name: slideInLeft;
-	-moz-animation-name: slideInLeft;
-	-webkit-animation-duration: 1500ms;
-	        animation-duration: 1500ms
+}
+
+.progress-bar {
+	width: 0%;
+	-webkit-transition: all 1500ms;
+	-o-transition: all 1500ms;
+	transition: all 1500ms;
 }
 
 .progress .progress-bar:after {
@@ -848,6 +872,7 @@ section.jumbotron.hire-section .buton a:before,
 	height: 20px;
 	background: #00bcd4;
 	right: 0;
+	-webkit-box-shadow: -4px 2px 6px 0 #81868ab8;
 	box-shadow: -4px 2px 6px 0 #81868ab8;
 	top: -7px;
 }
@@ -861,6 +886,7 @@ span.progress-tooltip {
 	padding: 1px 3px;
 	left: 100%!important;
 	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 	border-radius: 0;
 	font-size: 12px;
@@ -874,6 +900,7 @@ span.progress-tooltip {
 	right: 4px;
 	left: 0;
 	top: 0;
+	-webkit-box-shadow: 0 3px 5px #c6c2c2;
 	box-shadow: 0 3px 5px #c6c2c2
 }
 
@@ -944,6 +971,7 @@ span.progress-tooltip {
 	position: absolute;
 	left: 0;
 	-webkit-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s
 }
 
@@ -965,11 +993,12 @@ ul.filter-nav li.active a {
 	color: #17a2b8;
 	border: 1px solid #17a2b8;
 	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease
 }
 
 .portfolio {
-    min-height: 415px;
+	min-height: 415px;
 }
 
 .portfolio-items .container-fluid {
@@ -978,70 +1007,90 @@ ul.filter-nav li.active a {
 }
 
 .filter-portfolio [class*="col-"] {
-    padding: 0;
+	padding: 0;
 }
+
 .single-project {
-	width:100%;
+	width: 100%;
 	position: relative;
 }
+
 .single-project:before {
-    content: "";
-    top: 5%;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-    background: #222222;
-    position: absolute;
-    transition: all .4s;
-    opacity: 0;
-}
-.overly {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
-    padding: 20px;
-    text-align: center;
-    transform: translateY(-50%);
+	content: "";
+	top: 5%;
+	bottom: 5%;
+	left: 5%;
+	right: 5%;
+	background: #222222;
+	position: absolute;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
 	transition: all .4s;
 	opacity: 0;
 }
-.single-project i {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    font-size: 22px;
-    color: #22d5ec;
-    transition: all .4s;
-    opacity: 0;
-}
-.single-project:hover::before {opacity: .8;}
 
-.single-project:hover .overly,.single-project:hover i {
-    opacity: 1;
+.overly {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	padding: 20px;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	opacity: 0;
 }
+
+.single-project i {
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	font-size: 22px;
+	color: #22d5ec;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	opacity: 0;
+}
+
+.single-project:hover::before {
+	opacity: .8;
+}
+
+.single-project:hover .overly,
+.single-project:hover i {
+	opacity: 1;
+}
+
 .overly h1 {
-    color: #eaeaea;
-    font-weight: 600;
-    margin-bottom: 12px;
+	color: #eaeaea;
+	font-weight: 600;
+	margin-bottom: 12px;
 }
 
 .overly p {
-    color: #f4f4f4;
+	color: #f4f4f4;
 }
+
 .single-project img {
-    height: 222px;
+	height: 222px;
 }
+
 
 /******************************************************************************************
  * 
 ******************************************************************************************/
 
-
 section.jumbotron.hire-section {
 	background: #000000e6;
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/counter-bg.jpg);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .85)), to(rgba(0, 0, 0, .85))), url(../img/counter-bg.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/counter-bg.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/counter-bg.jpg);
 	background-size: cover;
 	background-position: 0 20%;
@@ -1056,7 +1105,8 @@ section.jumbotron.hire-section {
 	left: 50%;
 	text-align: left;
 	-webkit-transform: translateX(8%);
-	        transform: translateX(8%)
+	-ms-transform: translateX(8%);
+	transform: translateX(8%)
 }
 
 .justify_start_center h2 {
@@ -1095,6 +1145,7 @@ section.jumbotron.hire-section {
 	border-color: white!important
 }
 
+
 /******************************************************************************************
  * 
 ******************************************************************************************/
@@ -1104,14 +1155,17 @@ section.jumbotron.hire-section {
 	padding: 27px;
 	border: 1px solid #dee2e68c!important;
 	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
 	position: relative
 }
 
 .service-des:hover {
+	-webkit-box-shadow: 0 10px 15px #5252521f;
 	box-shadow: 0 10px 15px #5252521f;
 	-webkit-transform: translateY(-4px);
-	        transform: translateY(-4px)
+	-ms-transform: translateY(-4px);
+	transform: translateY(-4px)
 }
 
 .service-des h2 {
@@ -1125,7 +1179,6 @@ section.jumbotron.hire-section {
 	margin-bottom: 13%;
 	margin-top: 5%
 }
-
 
 .service-des h2 {
 	font-size: 150%;
@@ -1151,6 +1204,7 @@ section.jumbotron.hire-section {
 	font-weight: 700;
 	color: #eaeced
 }
+
 
 /******************************************************************************************
  * Testimonial 
@@ -1219,12 +1273,14 @@ section.jumbotron.hire-section {
 }
 
 .carousel-indicators {
-	margin-top: 2%;position: relative;
-	}
+	margin-top: 2%;
+	position: relative;
+}
 
 .carousel-indicators li {
-    background-color: #5cc6df;
-    }
+	background-color: #5cc6df;
+}
+
 
 /******************************************************************************************
  * 
@@ -1240,6 +1296,8 @@ section.counter-section .section-head h2 {
 
 section.counter-section {
 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/counter-bg3.jpg);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, .8))), url(../img/counter-bg3.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/counter-bg3.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/counter-bg3.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -1290,14 +1348,17 @@ section.counter-section {
 	background: #60e3f4;
 	right: 50%;
 	-webkit-transform: translate(50%);
-	        transform: translate(50%)
+	-ms-transform: translate(50%);
+	transform: translate(50%)
 }
+
 
 /******************************************************************************************
  * 
 ******************************************************************************************/
 
 #blog .card a.btn:focus {
+	-webkit-box-shadow: none;
 	box-shadow: none
 }
 
@@ -1305,6 +1366,7 @@ section.counter-section {
 	border: 1px solid #f3f3f3;
 	/* border: 1px solid #ecececb5; */
 	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
 	margin-bottom: 5%;
 	border-radius: 0;
@@ -1326,12 +1388,14 @@ section.counter-section {
 
 #blog .card>a img {
 	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in
 }
 
 #blog .card:hover>a img {
 	-webkit-transform: scale(1.05);
-	        transform: scale(1.05)
+	-ms-transform: scale(1.05);
+	transform: scale(1.05)
 }
 
 #blog .card-body .date-meta a {
@@ -1341,12 +1405,11 @@ section.counter-section {
 }
 
 #blog .card-body .date-meta a span {
-
 	color: #00bcd4;
 }
 
 #blog .card-body .date-meta a span:hover {
-	color:#4dd8e9;
+	color: #4dd8e9;
 	color: #0bcce4d1;
 }
 
@@ -1356,6 +1419,7 @@ section.counter-section {
 	color: #2b2b2b;
 	font-weight: 600;
 	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in;
 	margin-top: 2%
 }
@@ -1378,6 +1442,7 @@ section.counter-section {
 	border-bottom: 1px solid #17a2b8
 }
 
+
 /******************************************************************************************
  * 
 ******************************************************************************************/
@@ -1396,6 +1461,7 @@ section.ourclients-section {
 	opacity: .6;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in;
 	max-width: 170px;
 	max-height: 140px;
@@ -1409,26 +1475,30 @@ section.ourclients-section {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
 
+
 /******************************************************************************************
  * 
 ******************************************************************************************/
 
 select:focus,
 select:active {
+	-webkit-box-shadow: none;
 	box-shadow: none;
 	border: 0;
 	outline: 0
 }
 
 #contact .form {
-    background: #FFF;
+	background: #FFF;
 	padding: 50px 30px;
 	position: relative;
 	border: 1px solid #eaeaea;
 	text-align: left;
 	overflow: hidden;
+	-webkit-box-shadow: 0 0 7px #f3f3f3;
 	box-shadow: 0 0 7px #f3f3f3;
 }
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -1440,9 +1510,9 @@ textarea:focus,
 select:focus,
 button:focus {
 	outline: 0;
+	-webkit-box-shadow: none!important;
 	box-shadow: none!important
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -1472,11 +1542,9 @@ textarea {
 	width: 100%
 }
 
-
 #contact .form .btn-one {
 	width: 30%
 }
-
 
 
 /******************************************************************************************
@@ -1484,38 +1552,46 @@ textarea {
 ******************************************************************************************/
 
 #error404 {
-    text-align: center;
+	text-align: center;
 }
 
 #error404 h1 {
-    font-size: 1000%;
+	font-size: 1000%;
 }
 
 #error404 h4 {
-    font-size: 250%;
-    margin-bottom: 12px;
+	font-size: 250%;
+	margin-bottom: 12px;
 }
 
 .btn-404 {
-    display: inline-block;
-    background: #49dbf3;
-    min-width: 130px;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 40px;
+	display: inline-block;
+	background: #49dbf3;
+	min-width: 130px;
+	color: white;
+	padding: 12px 20px;
+	margin-top: 40px;
 }
+
 .btn-404:hover {
-    color: white;
-    opacity: .9;
+	color: white;
+	opacity: .9;
 }
+
 #error404 p {
-    color: #888888;
-    font-size: 14px;
-    max-width: 492px;
-    margin: auto;
-    padding: 0;
+	color: #888888;
+	font-size: 14px;
+	max-width: 492px;
+	margin: auto;
+	padding: 0;
 }
-form label {color: #e60404; margin-top: 5px;}
+
+form label {
+	color: #e60404;
+	margin-top: 5px;
+}
+
+
 /******************************************************************************************
  * 
 ******************************************************************************************/
@@ -1531,12 +1607,13 @@ div#to_top {
 	display: none;
 	cursor: pointer;
 	-webkit-animation-name: bounce;
-	        animation-name: bounce;
+	animation-name: bounce;
 	-webkit-animation-iteration-count: 2;
-	        animation-iteration-count: 2;
+	animation-iteration-count: 2;
 	opacity: .7;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
 	transition: all .2s ease
 }
 
@@ -1550,14 +1627,13 @@ div#to_top:hover {
  * 
 ******************************************************************************************/
 
-
 footer {
-    padding: 45px 0;
-    background-color: #343a40;
+	padding: 45px 0;
+	background-color: #343a40;
 }
 
 footer p {
-    padding: 0;
+	padding: 0;
 	color: #c8c8c8;
 	font-weight: 100
 }
@@ -1580,5 +1656,4 @@ footer p a {
 
 footer p a:hover {
 	color: #3ea3b3;
- 
 }
